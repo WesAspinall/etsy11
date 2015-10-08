@@ -1,0 +1,52 @@
+$border:1px solid #E1E3DF;
+$concrete: #F5F5F1;
+
+body{
+  background-color: $concrete;
+}
+
+.firstHeader, .secondHeader {
+  height: 50px;
+  border: $border;
+  padding-bottom: 10px;
+  display: inline-block;
+  background-color: white;
+};
+
+.secondHeader{
+}
+
+
+img{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contentContainer{
+  padding-left: 10px;
+  display: inline-block;
+}
+.content{
+    float: left;
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+    border: $border;
+    border-radius: 4px;
+    overflow: hidden;
+
+
+    ul {
+      list-style: none;
+      display: inline-block; 
+      overflow: hidden;
+      margin-top: 0;
+      width: 230px;
+      padding-left: 0;
+
+        li{
+          overflow: hidden;
+        } 
+
+  }
+}

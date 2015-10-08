@@ -1,0 +1,35 @@
+body {
+  background-color: #F5F5F1; }
+
+.firstHeader, .secondHeader {
+  height: 50px;
+  border: 1px solid #E1E3DF;
+  padding-bottom: 10px;
+  display: inline-block;
+  background-color: white; }
+
+img {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.contentContainer {
+  padding-left: 10px;
+  display: inline-block; }
+
+.content {
+  float: left;
+  display: inline-block;
+  height: 230px;
+  width: 230px;
+  border: 1px solid #E1E3DF;
+  border-radius: 4px;
+  overflow: hidden; }
+  .content ul {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 0;
+    width: 230px;
+    padding-left: 0; }
+    .content ul li {
+      overflow: hidden; }
