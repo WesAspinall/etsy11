@@ -6,7 +6,7 @@
  _.each(etsy.results, function(item){ 
   console.log(item);
   var itemHTML = template(item);
-  $('.firstHeader').append(itemHTML);
+  $('.contentContainer').append(itemHTML);
  });
 
 
