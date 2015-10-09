@@ -2,6 +2,11 @@ body {
   background-color: #F5F5F1;
   height: 100%; }
 
+.etsy {
+  color: #F76400;
+  font-family: 'Lora', serif;
+  font-size: 3em; }
+
 .firstHeader, .secondHeader {
   height: 50px;
   border: 1px solid #E1E3DF;
@@ -11,9 +16,13 @@ body {
   width: 100%;
   float: left; }
 
+div {
+  display: inline-block; }
+
 img {
-  padding-left: 10%;
-  padding-right: 10%; }
+  width: 230px;
+  margin-bottom: -10px;
+  border-radius: 5px; }
 
 .contentContainer {
   padding-top: 50px;
@@ -21,27 +30,36 @@ img {
   padding-left: 350px; }
 
 .box {
+  width: 170px;
+  height: 196px;
   display: inline-block;
-  padding: 10px; }
-
-.content {
-  height: 230px;
-  width: 230px;
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: white;
+  padding: 15px;
+  padding-right: 60px;
   margin-right: 0;
-  float: left; }
-  .content ul {
-    list-style: none;
-    display: inline-block;
-    margin-top: 0;
-    width: 230px;
-    padding-left: 0;
-    background-color: white; }
-    .content ul li {
-      overflow: hidden;
-      text-overflow: '...'; }
+  font-size: .8em; }
+
+.description {
+  border: 1px solid #E1E3DF;
+  border-top: none;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 3px;
+  margin-top: 10px;
+  height: 230px;
+  width: 230px; }
 
 .title {
-  height: 20px; }
+  width: 230px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.shopName {
+  color: #B6B6B6; }
+
+.price {
+  float: right;
+  padding-right: 10px;
+  color: #7BC440; }

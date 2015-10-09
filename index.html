@@ -3,12 +3,18 @@
 <head>
   <title>SAMPLE PROJECT</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class='wrapper'>
 
-<div class='firstHeader'><div>etsy</div></div>
+<div class='firstHeader'>
+
+  <div class="etsy">Etsy</div>
+  <input text="a;fds"></input>
+
+</div>
 
 <div class='secondHeader'></div>
 
@@ -17,27 +23,37 @@
 
 
 <div class="contentContainer">
+
+
+
 <script type="text/template" id="itemTemplate">
 <div class="box">
-<div class="content">
 
-      <img src="<%= Images[0].url_170x135 %>" alt="hi">
+
+
           
-        
-      <ul>
-        
-        <li class="title">
-          <%= title %>
-        </li>
+      <div class="description">
+          
+      <img src="<%= Images[0].url_170x135 %>" alt="hi">
 
-        <li class="item">
-          <%= Shop.shop_name %>
-        </li>
-        <li class="item">
-          <%= price %><%= currency_code %>
-        </li>
+        <div class="title">
+          <%= title %>
+        </div>
         
-      </ul>
+    
+
+        <div class="shopName">
+          <%= Shop.shop_name %>
+        </div>
+
+
+        <div class="price">
+          <%="$"+price %><%=" "+currency_code %>
+        </div>
+
+      </div>
+
+
 
     </div>
   </div>
