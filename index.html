@@ -7,65 +7,181 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+
 <div class='wrapper'>
+
 
 <div class='firstHeader'>
 
   <div class="etsy">Etsy</div>
-  <input text="a;fds"></input>
+
+  <input class="searchBar" text=""></input><button class="searchBtn">search</button>
+  <ul class="topNav">
+    <li>Sell on Etsy</li>
+    <li>Register</li>
+    <li><button>Sign In</button></li>
+  </ul>
+
+  <div class="cartBox">
+    <ul>
+    <li><a href="#" alt="cart"><img src="images/cart.png" class="cartImg"></a></li>
+    <li>Cart</li>
+  </div>
+
+</div> <!-- firstHeader -->
+
+
+
+
+<div class='secondHeader'>
+  <ul>
+    <li>Clothing & Accessories</li>
+    <li>Jewelry</li>
+    <li> Craft Supplies & Tools</li>
+    <li>Weddings</li>
+    <li>Entertainment</li>
+    <li>Home & Living</li>
+    <li>Kids & Baby</li>
+    <li>Vintage</li>
+  </ul>
+  
+</div> <!-- secondHeader -->
+
+
+
+<div class='sideBarContainer'>
+
+
+<h1 class='showResults'> Show results for: </h1>
+
+<div class='sideBar'>
+
+All Categories
+  <ul>
+    <li><a href="#">Home & Living</a></li>
+    <li><a href="#">Art & Collectibles</a></li>
+    <li><a href="#">Weddings</a></li>
+    <li><a href="#">Clothing</a></li>
+    <li><a href="#">Jewelry</a></li>
+    <li><a href="#">Paper & Party Supplies</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Craft Supplies & Tools</a></li>
+    <li><a href="#">Bags & Purses</a></li>
+    <li><a href="#">Bath & Beauty</a></li>
+    <li><a href="#">Shoes</a></li>
+    <li><a href="#">Books, Movies & Music</a></li>
+    <li><a href="#">Electronics & Accessories</a></li>
+    <li><a href="#">Toys & Games</a></li>
+    <li><a href="#">Pet Supplies</a></li>
+  </ul>
+
+</div> 
+
+<span class="refineYour"> Refine your search</span>
+
+<div class='sideBar2'>
+
+<div class="itemType"> 
+
+  <span>Item type</span>
+
+  <ul>
+    <li><input type="radio">All items</input</li>
+    <li><input type="radio">Handmade</input</li>
+    <li><input type="radio">Vintage</input</li>
+  </ul>
+</div>
+
+<div class="sidebarPrice">
+  <span>Price</span>
+  <ul>
+  <li><input type="text" placeholder="Low" class="priceInput" name="min" value=""></li>
+  <li>to</li>
+  <li><input value="high"></input></li>
+  </ul>
+  </div>
+
+<div class="filter">
+<span>Filter by Color</span>
+  <ul>
+    <li class='red'></li>
+    <li class='orange'></li>
+    <li class='yellow'></li>
+    <li class='green'></li>
+    <li class='blue'></li>
+    <li class='purple'></li>
+    <li class='black'></li>
+    <li class='white'></li>
+  </ul>
+</div>
+
+<div class="orderingOptions">
+<span>Ordering Options</span>
+    <ul>
+      <li><button></button>Accepts Etsy Gift Cards</li>
+      <li><button></button>Customizable</li>
+    </ul>
+
+</div>
+<div class="shopLocation">
+<span>Shop Location</span>
+    <ul>
+      <li><input type="radio"></input>Anywhere</li>
+      <li><input type="radio"></input>United States</li>
+      <li><a href="#">Choose custom location</a></li>
+    </ul>
+
+</div>
+<div class="shipTo">
+<span>Ship to</span>
+  <select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>United States</option>
+  <option value="value3">Value 3</option>
+</select>
 
 </div>
 
-<div class='secondHeader'></div>
+</div> <!-- sidebar 2 -->
 
-<div class='sideBar'></div>
-<div class='sideBar2'></div>
+</div>
 
-
-<div class="contentContainer">
-
-
-
+<div class="scriptContainer">
 <script type="text/template" id="itemTemplate">
-<div class="box">
-
-
-
-          
-      <div class="description">
+    
+  <div class="box">
           
       <img src="<%= Images[0].url_170x135 %>" alt="hi">
 
-        <div class="title">
-          <%= title %>
-        </div>
-        
-    
+      <div class = "description">
+          <div class="title">
+            <%= title %>
+          </div>
+          
 
-        <div class="shopName">
-          <%= Shop.shop_name %>
-        </div>
+          <div class="shopName">
+            <%= Shop.shop_name %>
+          </div>
 
 
-        <div class="price">
-          <%="$"+price %><%=" "+currency_code %>
-        </div>
-
+          <div class="price">
+            <%="$"+price %><%=" "+currency_code %>
+          </div>
       </div>
 
-
-
-    </div>
   </div>
-</div>
 </script>
+</div> <!-- script container -->
 
 
+<!--  scripts -->
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/etsyPayload.js"></script>
   <script src="js/main.js"></script>
-</div>
-</div>
+
+
+</div> <!-- wrapper -->
 </body>
 </html>

@@ -7,7 +7,7 @@
   console.log(item);
   if(item.currency_code === 'USD'){
   var itemHTML = template(item);
-  $('.contentContainer').append(itemHTML);
+  $('.scriptContainer').append(itemHTML);
    }
   });
 
