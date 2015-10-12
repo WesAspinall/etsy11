@@ -100,21 +100,24 @@ div {
 .cartBox:hover {
   opacity: 1; }
 
-.secondHeader ul {
-  list-style: none;
-  display: inline-block;
-  padding-left: 0;
-  margin-left: 12%;
-  margin-right: 10%;
-  padding-top: 5px; }
-  .secondHeader ul li {
+.secondHeaderNav {
+  width: 100%;
+  height: 100%; }
+  .secondHeaderNav ul {
+    list-style: none;
     display: inline-block;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    color: #666; }
-  .secondHeader ul li:hover {
-    border-bottom: 3px solid #F76400; }
+    padding-left: 0;
+    margin-left: 12%;
+    margin-right: 10%;
+    padding-top: 5px; }
+    .secondHeaderNav ul li {
+      display: inline-block;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 20px;
+      color: #666; }
+    .secondHeaderNav ul li:hover {
+      border-bottom: 3px solid #F76400; }
 
 .etsy {
   color: #F76400;
@@ -128,7 +131,6 @@ div {
 .sideBarContainer {
   width: 242px;
   height: 100%;
-  border: 1px solid #E1E3DF;
   padding-left: 100px;
   padding-top: 30px; }
   .sideBarContainer ul {
@@ -280,8 +282,7 @@ select {
   display: inline-block;
   float: right;
   padding-top: 20px;
-  padding-right: 90px;
-  border: 1px solid black; }
+  padding-right: 90px; }
 
 .rev {
   height: 100px;
@@ -290,12 +291,13 @@ select {
 
 .relevancy {
   border: none;
-  width: 80px;
-  float: right;
+  width: 98px;
   height: 100%;
   padding: 10px;
   margin-right: 35px;
-  display: inline-block; }
+  display: inline-block;
+  background: transparent;
+  color: #0096BA; }
 
 .scriptHeader {
   width: 100%; }
@@ -303,8 +305,9 @@ select {
     margin: 0; }
     .scriptHeader ul li {
       display: inline-block; }
-  .scriptHeader .sort {
-    display: inline; }
+
+.sort {
+  padding-left: 350px; }
 
 .box {
   font-size: .8em;

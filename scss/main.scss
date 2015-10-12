@@ -132,7 +132,9 @@ div{
 }
 
 
-.secondHeader{
+.secondHeaderNav{
+  width: 100%;
+  height: 100%;
 
     ul{
       list-style: none;
@@ -174,7 +176,6 @@ div{
 .sideBarContainer{
   width: 242px;
   height: 100%;
-  border: $border;
   padding-left: 100px;
   padding-top: 30px;
     ul{
@@ -349,7 +350,7 @@ left: 11px;
   float: right; 
   padding-top: 20px;
   padding-right: 90px;
-  border: 1px solid black;
+ 
   
 }
 .rev{
@@ -360,12 +361,13 @@ left: 11px;
 
 .relevancy{
   border: none;
-  width: 80px;
-  float: right;
+  width: 98px;
   height: 100%;
   padding: 10px;
   margin-right: 35px;
   display: inline-block;
+  background: transparent;
+  color: #0096BA;
 }
 
 .scriptHeader{
@@ -377,14 +379,11 @@ left: 11px;
         display: inline-block;
       }
     }
-      .sort{
-       display: inline;
-       // float: right;
-    
-    }
-  
-}
+  }
 
+.sort{
+  padding-left: 350px;
+}
 
 .box{
   font-size: .8em;
